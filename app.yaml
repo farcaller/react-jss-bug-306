@@ -1,0 +1,27 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- ^\..*$
+- ^gatsby-.*$
+- ^node_modules/.*$
+- ^src/.*$
+- ^data/.*$
+- ^thirdparty/.*$
+
+handlers:
+- url: /
+  static_files: public/index.html
+  upload: public/index.html
+  secure: always
+
+- url: /(.*)
+  static_files: public/\1
+  upload: public/(.*)
+  secure: always
