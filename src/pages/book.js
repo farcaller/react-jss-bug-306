@@ -1,4 +1,3 @@
-import withStyles from "@material-ui/core/styles/withStyles";
 import { cardTitle } from "assets/jss/material-kit-react.jsx";
 import GridContainer from "components/Grid/GridContainer.jsx";
 import { graphql } from 'gatsby';
@@ -27,7 +26,7 @@ class Book extends React.Component {
   }
 }
 
-export default withStyles(style)(Book);
+export default Book;
 
 export const query = graphql`
   query {
