@@ -13,9 +13,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    {
-      resolve: "gatsby-transformer-remark",
-    },
+    'gatsby-transformer-remark',
     'gatsby-plugin-sharp',
     'gatsby-plugin-sass',
     {
